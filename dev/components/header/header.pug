@@ -1,0 +1,19 @@
+include header-nav/header-nav
+include ../phone/phone
+include ../button/button
+
+header.header 
+  .header__nav
+    span.header__nav-icon
+    .header__nav-right
+      +header-nav('user.png', 'Личный кабинет')
+      +header-nav('Р.png', 'Рубль')
+      +header-nav(undefined, 'Ru')
+      +phone
+  .header__text-box
+    img(class='header__logo' alt="logo" src='../img/logo.png')
+    h1.heading-primary 
+      span.heading-primary__main.u-margin-bottom-small Морские прогулки
+      span.heading-primary__sub.u-margin-bottom-medium по чёрному морю
+    +button('Выбрать круиз')
+  img(class='line-to-bottom' src='../img/line.png')

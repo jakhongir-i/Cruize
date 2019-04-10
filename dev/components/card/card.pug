@@ -1,0 +1,10 @@
+mixin card(img, title, rout, duration, cost)
+  .card
+    .card__img
+      img(src='../img/' + img)
+    .card__content
+      .card__title.heading-tertiary= title
+      .card__rout #[strong Маршрут:] #{rout}
+      .card__duration #[strong Продолжительность:] #{duration}
+      .card__cost= cost
+

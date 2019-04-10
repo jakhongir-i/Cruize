@@ -5,5 +5,21 @@ html(lang="ru", prefix="og: http://ogp.me/ns#")
     include assets/_metas
     include assets/_links
   body
-    .page-wrapper
-    include assets/_scripts
+    include ../components/header/header
+    main
+      section.catalog-section
+        .cruize-catalog.u-center-text
+          h2.heading-secondary Каталог круизов
+          span.sort-cost Сортировать круизы по <i>цене</i>
+        .card-wrap
+          include ../components/card/card
+          .first
+            +card('card-1.png', 'Морской круиз в Анапу', ' Сочи-Лазаревское-Геленджик-Анапа', '10ч 0мин', '49 000руб.')
+          .second
+            +card('card-2.png', 'Морской круиз в Анапу', ' Сочи-Лазаревское-Геленджик-Анапа', '10ч 0мин', '49 000руб.')
+          .third
+            +card('card-3.png', 'Морской круиз в Анапу', ' Сочи-Лазаревское-Геленджик-Анапа', '10ч 0мин', '49 000руб.')
+          .four
+            +card('card-4.png', 'Морской круиз в Анапу', ' Сочи-Лазаревское-Геленджик-Анапа', '10ч 0мин', '49 000руб.')
+          .five
+            +card('card-5.png', 'Морской круиз в Анапу', ' Сочи-Лазаревское-Геленджик-Анапа', '10ч 0мин', '49 000руб.')

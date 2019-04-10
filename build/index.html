@@ -28,10 +28,89 @@
     <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
     <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
     <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <div class="page-wrapper"></div>
-    <script src="js/libs.min.js"></script>
-    <script src="js/common.min.js"></script>
+    <header class="header"> 
+      <div class="header__nav"><span class="header__nav-icon"></span>
+        <div class="header__nav-right">
+              <div class="header__navs"><img class="header__navs-icon" src="../img/icons/user.png"><span class="header__navs-text">Личный кабинет</span><span class="arrow"></span>
+              </div>
+              <div class="header__navs"><img class="header__navs-icon" src="../img/icons/Р.png"><span class="header__navs-text">Рубль</span><span class="arrow"></span>
+              </div>
+              <div class="header__navs"><span class="header__navs-text">Ru</span><span class="arrow"></span>
+              </div>
+              <div class="phone"><span class="phone__num">8 800 500-61-05 </span><span class="phone__context">Круглосуточная поддержка</span></div>
+        </div>
+      </div>
+      <div class="header__text-box"><img class="header__logo" alt="logo" src="../img/logo.png">
+        <h1 class="heading-primary"> <span class="heading-primary__main u-margin-bottom-small">Морские прогулки</span><span class="heading-primary__sub u-margin-bottom-medium">по чёрному морю</span></h1>
+            <button class="btn">Выбрать круиз</button>
+      </div><img class="line-to-bottom" src="../img/line.png">
+    </header>
+    <main>
+      <section class="catalog-section">
+        <div class="cruize-catalog u-center-text">
+          <h2 class="heading-secondary">Каталог круизов</h2><span class="sort-cost">Сортировать круизы по <i>цене</i></span>
+        </div>
+        <div class="card-wrap">
+          <div class="first">
+                      <div class="card">
+                        <div class="card__img"><img src="../img/card-1.png"></div>
+                        <div class="card__content">
+                          <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
+                          <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
+                          <div class="card__duration"><strong>Продолжительность:</strong> 10ч 0мин</div>
+                          <div class="card__cost">49 000руб.</div>
+                        </div>
+                      </div>
+          </div>
+          <div class="second">
+                      <div class="card">
+                        <div class="card__img"><img src="../img/card-2.png"></div>
+                        <div class="card__content">
+                          <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
+                          <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
+                          <div class="card__duration"><strong>Продолжительность:</strong> 10ч 0мин</div>
+                          <div class="card__cost">49 000руб.</div>
+                        </div>
+                      </div>
+          </div>
+          <div class="third">
+                      <div class="card">
+                        <div class="card__img"><img src="../img/card-3.png"></div>
+                        <div class="card__content">
+                          <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
+                          <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
+                          <div class="card__duration"><strong>Продолжительность:</strong> 10ч 0мин</div>
+                          <div class="card__cost">49 000руб.</div>
+                        </div>
+                      </div>
+          </div>
+          <div class="four">
+                      <div class="card">
+                        <div class="card__img"><img src="../img/card-4.png"></div>
+                        <div class="card__content">
+                          <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
+                          <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
+                          <div class="card__duration"><strong>Продолжительность:</strong> 10ч 0мин</div>
+                          <div class="card__cost">49 000руб.</div>
+                        </div>
+                      </div>
+          </div>
+          <div class="five">
+                      <div class="card">
+                        <div class="card__img"><img src="../img/card-5.png"></div>
+                        <div class="card__content">
+                          <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
+                          <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
+                          <div class="card__duration"><strong>Продолжительность:</strong> 10ч 0мин</div>
+                          <div class="card__cost">49 000руб.</div>
+                        </div>
+                      </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

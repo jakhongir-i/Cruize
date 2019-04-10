@@ -1,0 +1,17 @@
+.phone{
+  
+  font-size: 1.4rem;
+  &__num{
+    font-weight: 700;
+    display: block;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    margin-bottom: -.5rem;
+  }
+
+  &__context{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -5px;
+  }
+}

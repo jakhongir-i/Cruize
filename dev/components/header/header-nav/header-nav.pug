@@ -1,0 +1,6 @@
+mixin header-nav(icon, text)
+  .header__navs
+    if icon != undefined
+      img(class='header__navs-icon' src='../img/icons/' + icon)
+    span.header__navs-text= text
+    span.arrow
