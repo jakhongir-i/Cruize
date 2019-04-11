@@ -1,2 +1,4 @@
-mixin button(text)
+mixin button(text, arrow)
   button.btn= text
+    if (arrow != undefined)
+      span.btn-arrow
