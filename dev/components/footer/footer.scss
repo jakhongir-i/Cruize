@@ -5,9 +5,21 @@
   font-size: 1.4rem;
   justify-content: space-between;
   
+  @include respond(tab-port){
+    padding: 3rem 10rem;
+    
+  }
+
+  @include respond(phone){
+    padding: 3rem 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
   &__menu{
     list-style: none;
-
+    @include respond(phone){
+      display: none;
+    }
     & li:not(:last-child){
       margin-bottom: 1rem;
     }

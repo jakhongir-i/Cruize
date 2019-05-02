@@ -12,11 +12,20 @@
   color: $color-primary;
   position: relative;
   background-color: $color-bg;
+
+  @include respond(tab-port){
+    padding: 0 10rem;
+  }
+  @include respond(phone){
+    padding: 0 2rem;
+  }
   &__nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3.5rem 0;
+
+    
   }
 
   &__nav-icon{
@@ -52,12 +61,17 @@
   &__nav-right{
     display: flex;
     justify-content: space-between;
-
+    @include respond(phone){
+      display: none;
+    }
   }
 
   &__text-box{
     text-align: center;
-  
+    
+    @include respond(phone){
+      margin-top: -5rem;
+    }
   }
 }
 

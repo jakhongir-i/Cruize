@@ -3,10 +3,21 @@
   padding: 0 25rem;
   font-family: 'Raleway', sans-serif;
   
+  @include respond(tab-port){
+    padding: 0 10rem;
+  }
+
+  @include respond(phone){
+    padding: 0 2rem;
+  }
 }
 
 .cruize-catalog{
   padding-top: 14rem;
+
+  @include respond(tab-land){
+    padding-top: 3rem;
+  }
 }
 .show-more-btn{
   text-align: center;
@@ -19,6 +30,20 @@
   grid-template-areas: "first second" "first third" "four five";
   grid-gap: 3rem;
   margin-top: 4rem;
+
+  @include respond(tab-land){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "first second" "third four";
+  }
+
+  @include respond(tab-port){
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "first" "second" "third" "four";
+  }
 }
 .first { grid-area: first; }
 
@@ -29,17 +54,13 @@
 .four { grid-area: four;  margin-top: -1rem; }
 
 .five { grid-area: five;  margin-top: -1rem; }
+
 .show-in-tab{
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .card-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "first second" "third four";
-  }
+@include respond(tab-land){
+
   
   .first { grid-area: first; }
   
@@ -60,7 +81,6 @@
 
 @media only screen and (max-width: 1000px){
   .card-wrap{
-    
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
