@@ -19,11 +19,7 @@
         <meta property="og:type" content="website">
         <meta property="og:image">
         <meta property="og:description">
-    <style>
-      *{margin:0;padding:0}html{font-size:62.5%}body{box-sizing:border-box}.first{grid-area:a}.second{grid-area:b}.third{grid-area:c}.four{grid-area:d}.five{grid-area:e;margin-top:-1rem}@media (min-width:112.5em){html{font-size:75%}}@media (max-width:80.6em){html{font-size:56.25%}.first{grid-area:a}.second{grid-area:b}.third{grid-area:c}.four{grid-area:d}}@media (max-width:56.25em){html{font-size:50%}}
-    </style>
-    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="img/favicons/logo.png" type="image/png">
     <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
     <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
@@ -32,17 +28,15 @@
     <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
     <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
     <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;amp;subset=cyrillic" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;amp;subset=cyrillic" rel="stylesheet"></noscript>
-    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="header"> 
       <div class="header__nav"><span class="header__nav-icon"></span>
         <div class="header__nav-right">
-              <div class="header__navs"><img class="header__navs-icon" src="../img/icons/user.png"><span class="header__navs-text">Личный кабинет</span><span class="arrow"></span>
+              <div class="header__navs"><img class="header__navs-icon" src="img/icons/user.png"><span class="header__navs-text">Личный кабинет</span><span class="arrow"></span>
               </div>
-              <div class="header__navs"><img class="header__navs-icon" src="../img/icons/Р.png"><span class="header__navs-text">Рубль</span><span class="arrow"></span>
+              <div class="header__navs"><img class="header__navs-icon" src="img/icons/Р.png"><span class="header__navs-text">Рубль</span><span class="arrow"></span>
               </div>
               <div class="header__navs"><span class="header__navs-text">Ru</span><span class="arrow"></span>
               </div>
@@ -50,11 +44,11 @@
               </div>
         </div>
       </div>
-      <div class="header__text-box"><img class="header__logo" alt="logo" src="../img/logo.png">
+      <div class="header__text-box"><img class="header__logo" alt="logo" src="img/logo.png">
         <h1 class="heading-primary"> <span class="heading-primary__main u-margin-bottom-small">Морские прогулки</span><span class="heading-primary__sub u-margin-bottom-medium">по чёрному морю</span></h1>
             <button class="btn">Выбрать круиз
             </button>
-      </div><img class="line-to-bottom" src="../img/line.png">
+      </div><img class="line-to-bottom" src="img/line.png">
     </header>
     <main>
       <section class="catalog-section">
@@ -64,7 +58,7 @@
         <div class="card-wrap">
           <div class="first">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-1.png"></div>
+                        <div class="card__img"><img src="img/card-1.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морской круиз в Анапу</div>
                           <div class="card__rout"><strong>Маршрут:</strong>  Сочи-Лазаревское-Геленджик-Анапа</div>
@@ -75,7 +69,7 @@
           </div>
           <div class="second hide-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-2.png"></div>
+                        <div class="card__img"><img src="img/card-2.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Обзорная морская прогулка с экскурсией</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Адлер-Сочи (без высадки)</div>
@@ -86,7 +80,7 @@
           </div>
           <div class="second show-in-tab"> 
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-2-tab.png"></div>
+                        <div class="card__img"><img src="img/card-2-tab.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Обзорная морская прогулка с экскурсией</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Адлер-Сочи (без высадки)</div>
@@ -97,7 +91,7 @@
           </div>
           <div class="third hide-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-3.png"></div>
+                        <div class="card__img"><img src="img/card-3.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морская прогулка в Геленджик</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Туапсе-Геленджик </div>
@@ -108,7 +102,7 @@
           </div>
           <div class="third show-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-3-tab.png"></div>
+                        <div class="card__img"><img src="img/card-3-tab.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морская прогулка в Геленджик</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Туапсе-Геленджик </div>
@@ -119,7 +113,7 @@
           </div>
           <div class="four hide-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-4.png"></div>
+                        <div class="card__img"><img src="img/card-4.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морской круиз в Новороссийск</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</div>
@@ -130,7 +124,7 @@
           </div>
           <div class="four show-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-4-tab.png"></div>
+                        <div class="card__img"><img src="img/card-4-tab.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морской круиз в Новороссийск</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</div>
@@ -141,7 +135,7 @@
           </div>
           <div class="five hide-in-tab">
                       <div class="card">
-                        <div class="card__img"><img src="../img/card-5.png"></div>
+                        <div class="card__img"><img src="img/card-5.png"></div>
                         <div class="card__content">
                           <div class="card__title heading-tertiary">Морская прогулка в Абрау-Дюрсо</div>
                           <div class="card__rout"><strong>Маршрут:</strong> Сочи-Абрау-Дюрсо</div>
@@ -164,7 +158,7 @@
         <li><a class="footer__menu-item" href="#">Контакты</a></li>
       </ul>
       <div class="footer__social">Будь на связи
-        <div class="footer__social-icons"><img src="../img/icons/vk.png"><img src="../img/icons/ok.png"><img src="../img/icons/yutb.png"><img src="../img/icons/inst.png"></div>
+        <div class="footer__social-icons"><img src="img/icons/vk.png"><img src="img/icons/ok.png"><img src="img/icons/yutb.png"><img src="img/icons/inst.png"></div>
       </div>
       <div class="footer__contacts">
             <div class="phone"><span class="phone__num">8 800 500-61-05 </span><span class="phone__context">Круглосуточная поддержка</span><span class="phone__copyright">&copy; 2016 OOO «Городские Круизы»</span>
